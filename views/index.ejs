@@ -1,0 +1,32 @@
+<%- include("partials/head.ejs") %>
+<div class="main">
+    <h1>This is purely: <div class="roller">
+      <span5 id="rolltext">inkspire<br/>
+      crafter<br/>
+      Insights<br/>
+      <span6 id="spare-time">too much thoughts?</span6><br/>
+      </div>
+      </h1>
+      
+    </div>
+<%for(let i=0; i< dataEntered.length-1; i++){%>
+<div id="homePageDiv" style="margin-bottom: 80px;">
+<div id="post">
+    <form action="/editPost" method="post">
+        <input type="hidden" id="button123"  name="indexInArray" class="buttonEdit" >
+        <button type="submit" class="configButton"><img src="/images/edit.png" alt="" height="20px" ></button>
+    </form>
+    <form action="/deleteLogin" method="post">
+            <input type="hidden" id="button123"  name="indexInArray" class="buttonDelete" >
+            <button type="submit" class="configButton"><img src="/images/delete.png" alt="." height="20px" ></button>
+    </form>
+    <h1><%= JSON.parse(dataEntered[i]).heading %> </h1>
+    <p><%= JSON.parse(dataEntered[i]).body.substring(1, 300) + " ..." %></p>
+    <form action="/viewPost" method="post" style="display: flex; justify-content: center">
+        <input type="hidden" id="button123"  name="indexInArray" class="buttonView" >
+        <button type="submit" class="postSubmitButton-permanent" id="postSubmitButton" style="border: 3px solid #765dd0;">View ></button>
+    </form>
+</div>
+</div>
+<% } %>
+<%- include("partials/foot.ejs") %>

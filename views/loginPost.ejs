@@ -1,0 +1,19 @@
+<%- include("partials/head.ejs") %>
+<div id="formOfLoginPost">
+    <form action="/editor" method="post" id="loginPost">
+    <h1>Enter <span3>password</span3> to acess post</h1>
+    <% if(locals.passwordWrong){ %>
+        <h2>try again!</h2>
+        <% } %>
+    <li>
+        <input type="text" name="password" placeholder="password" required id="loginInput">
+    </li>
+    <li>
+        <button type="submit" class="loginPostSubmitButton" id="loginPostSubmitButton">Submit ></button>
+    </li>
+    </form>
+</div>
+
+
+
+<%- include("partials/foot.ejs") %>

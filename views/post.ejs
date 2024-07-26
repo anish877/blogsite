@@ -1,0 +1,22 @@
+<%- include("partials/head.ejs") %>
+
+<form action="/submit" method="post" id="newPostForm">
+    <li>
+        <h2 class="headingOfNewPost">let your&nbsp; <span>thoughts</span> &nbsp;win! <span4>👇</span4></h2>
+    </li>
+    <li>
+        <textarea name="heading" id="heading" required placeholder="Type your heading here..."></textarea>
+    </li>
+    <li>
+        <textarea name="body" id="body" required placeholder="Type your blog here..."></textarea>
+    </li>
+    <li>
+        <h2 class="headingOfNewPost" style="font-size: 1.3rem;">password:</h2>
+        <input type="text" id="password" required name="password" placeholder="password">
+    </li>
+    <li>
+        <button type="submit" id="postSubmitButton" class="postSubmitButton-permanent">Post!</button>
+    </li>
+</form>
+
+<%- include("partials/foot.ejs") %>

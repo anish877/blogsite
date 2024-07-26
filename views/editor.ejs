@@ -1,0 +1,20 @@
+<%- include("partials/head.ejs") %>
+<form action="/makeChanges" method="post" id="postEditor">
+    <li>
+        <h1>mistakes happen! <span4>👍</span4></h1>
+    </li>
+    <li>
+        <textarea name="heading" id="heading" required><%= heading %></textarea>
+    </li>
+    <li>
+        <textarea name="body" id="body" required><%= body %></textarea>
+    </li>
+    <li style="margin-top: 15px; margin-bottom: 10px;">
+        <h2 class="headingOfNewPost" style="font-size: 1.3rem;">password:</h2>
+        <input type="text" name="password" id="password" style="margin-top: 20px;" required placeholder=<%= password %>>
+    </li>
+    <li>
+        <button type="submit" id="changPostButton" class="changPostButton">Change!</button>
+    </li>
+</form>
+<%- include("partials/foot.ejs") %>

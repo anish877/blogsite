@@ -1,0 +1,16 @@
+<%- include("partials/head.ejs") %>
+<div id="formOfLoginPost">
+    <form action="/deletePost" method="post" id="loginPost">
+    <h1>Enter <span3>password</span3> to delete post</h1>
+    <li>
+        <input type="text" name="password" placeholder="password" required id="loginInput">
+    </li>
+    <li>
+        <button type="submit" class="loginPostSubmitButton" id="loginPostSubmitButton">Delete!</button>
+    </li>
+    </form>
+</div>
+
+
+
+<%- include("partials/foot.ejs") %>
