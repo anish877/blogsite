@@ -12,14 +12,16 @@
 <%for(let i=0; i< dataEntered.length-1; i++){%>
 <div id="homePageDiv" style="margin-bottom: 80px;">
 <div id="post">
+    <div style="display: inline-flex">
     <form action="/editPost" method="post">
         <input type="hidden" id="button123"  name="indexInArray" class="buttonEdit" >
-        <button type="submit" class="configButton"><img src="/images/edit.png" alt="" height="20px" ></button>
+        <button type="submit" class="configButton">EDIT</button>
     </form>
     <form action="/deleteLogin" method="post">
             <input type="hidden" id="button123"  name="indexInArray" class="buttonDelete" >
-            <button type="submit" class="configButton"><img src="/images/delete.png" alt="." height="20px" ></button>
+            <button type="submit" class="configButton">DELETE</button>
     </form>
+    </div>
     <h1><%= JSON.parse(dataEntered[i]).heading %> </h1>
     <p><%= JSON.parse(dataEntered[i]).body.substring(1, 300) + " ..." %></p>
     <form action="/viewPost" method="post" style="display: flex; justify-content: center">

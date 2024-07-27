@@ -108,3 +108,12 @@ if(document.querySelectorAll("#post"))
         item.classList.remove("mouse-enter-post-card");
     })})
 }
+if(document.querySelectorAll(".configButton"))
+    {
+        document.querySelectorAll(".configButton").forEach((item)=>{item.addEventListener("mouseenter", ()=>{
+            item.classList.add("mouse-enter-config-button");
+        })})
+        document.querySelectorAll(".configButton").forEach((item)=>{item.addEventListener("mouseleave", ()=>{
+            item.classList.remove("mouse-enter-config-button");
+        })})
+    }

@@ -129,9 +129,7 @@ li{
     font-style: normal;
     font-size: 2rem;
     color: #1c1b21;
-    animation-name: shake;
-    animation-duration: 0.5s;
-    animation-iteration-count: infinite;
+    filter: drop-shadow(gray 0.1rem 0.1rem 5px );
 }
 .postSubmitButton-permanent{
     margin-top: 10px;
@@ -155,7 +153,7 @@ li{
   }
   #post h1{
     font-family: "Source Code Pro", monospace;
-    color: #765dd0;
+    color: #dfd6ff;
     font-weight: 400;
     font-style: normal;
     font-size: 3rem;
@@ -332,7 +330,7 @@ span5,span6{
   width: 80%;
 }
 #viewPost div>h1{
-  font-family: "Headland One", serif;
+  font-family: "Source Code Pro", monospace;
   color: #765dd0;
   font-weight: 400;
   font-style: normal;
@@ -353,6 +351,29 @@ span5,span6{
   position: relative;
   top: -5px;
   filter: drop-shadow(#ca9eff 0.1rem 0.1rem 5px);
+}
+.configButton{
+  height: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 0px;
+  border-radius: 12px;
+  background-color: #1c1b21;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.2rem;
+  color: white;
+
+}
+.mouse-enter-config-button{
+  position: relative;
+  top: -5px;
+  filter: drop-shadow(white 0.1rem 0.1rem 5px );
+  background-color: #765dd0;
+
 }
 @media screen and (max-width: 600px){
   #viewPost div>h1{
