@@ -107,7 +107,7 @@ li{
     font-size: 1rem;
     color: white;
   }
-  
+
   .mouse-enter-navbar{
     position: relative;
     top: -5px;
@@ -329,7 +329,7 @@ span5,span6{
 }
 #viewPost div>h1{
   font-family: "Source Code Pro", monospace;
-  color: #765dd0;
+  color: #dfd6ff;
   font-weight: 400;
   font-style: normal;
   font-size: 3.5rem;
