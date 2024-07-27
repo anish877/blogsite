@@ -107,9 +107,7 @@ li{
     font-size: 1rem;
     color: white;
   }
-  span2{
-    filter: drop-shadow(white 0.1rem 0.1rem 4px);
-  }
+  
   .mouse-enter-navbar{
     position: relative;
     top: -5px;

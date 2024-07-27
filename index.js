@@ -36,12 +36,12 @@ app.get("/newPost", (req,res)=>{
 app.post("/submit", (req,res)=>{
     fs.appendFile("post.txt", JSON.stringify(req.body)+"\n",(error)=>{if(error)throw error ;});
     res.redirect("/home");
-})
+});
 
 app.post("/deleteLogin", (req,res)=>{
     indexOfPostToDelete = req.body.indexInArray;
     res.render("deletePostLogin.ejs");
-})
+});
 
 app.post("/deletePost",(req,res)=>{
     if(req.body.password===JSON.parse(dataEntered[indexOfPostToDelete]).password)
@@ -62,12 +62,12 @@ app.post("/deletePost",(req,res)=>{
         indexOfPostToDelete = null;
         res.redirect("/home")
     }
-})
+});
 
 app.post("/editPost", (req,res)=>{
     indexOfPostToEdit = req.body.indexInArray;
     res.render("loginPost.ejs");
-})
+});
 
 app.post("/editor", (req,res)=>{
     if(req.body.password===JSON.parse(dataEntered[indexOfPostToEdit]).password)
@@ -96,7 +96,7 @@ app.post("/makeChanges", (req,res)=>{
     })
     indexOfPostToEdit = null;
     res.redirect("/home");
-})
+});
 
 app.post("/viewPost", (req,res)=>{
     indexOfPostToView = req.body.indexInArray;
@@ -106,7 +106,15 @@ app.post("/viewPost", (req,res)=>{
             body: JSON.parse(dataEntered[indexOfPostToView]).body
         }
     );
-})
+});
+
+app.get("/gitHub", (req,res)=>{
+    res.redirect("https://github.com/anish877/blogsite");
+});
+
+app.get("/portfolio", (req,res)=>{
+    res.redirect("https://anish877.github.io/portfolio/");
+});
 
 app.listen(port, ()=>{
     console.log(`Server started at port ${port}.`)

@@ -47,6 +47,18 @@ document.querySelector("#homeButton").addEventListener("mouseenter", ()=>{
 document.querySelector("#homeButton").addEventListener("mouseleave", ()=>{
     document.querySelector("#homeButton").classList.remove("mouse-enter-navbar")
 })
+document.querySelector("#gitHubButton").addEventListener("mouseenter", ()=>{
+    document.querySelector("#gitHubButton").classList.add("mouse-enter-navbar")
+})
+document.querySelector("#gitHubButton").addEventListener("mouseleave", ()=>{
+    document.querySelector("#gitHubButton").classList.remove("mouse-enter-navbar")
+})
+document.querySelector("#contactButton").addEventListener("mouseenter", ()=>{
+    document.querySelector("#contactButton").classList.add("mouse-enter-navbar")
+})
+document.querySelector("#contactButton").addEventListener("mouseleave", ()=>{
+    document.querySelector("#contactButton").classList.remove("mouse-enter-navbar")
+})
 document.querySelector("#newPostButton").addEventListener("mouseenter", ()=>{
     document.querySelector("#newPostButton").classList.add("mouse-enter-navbar")
 })
