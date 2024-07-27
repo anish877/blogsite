@@ -154,12 +154,13 @@ li{
     background-color: #1c1b21;
   }
   #post h1{
-    font-family: "Headland One", serif;
+    font-family: "Source Code Pro", monospace;
     color: #765dd0;
     font-weight: 400;
     font-style: normal;
-    font-size: 3.5rem;
-    /* border-bottom: 1px solid #765dd0; */
+    font-size: 3rem;
+    border-bottom: 1px dotted #765dd0;
+    padding-bottom: 10px;
     word-wrap: break-word;
   }
   #post p{
@@ -351,7 +352,7 @@ span5,span6{
 .mouse-enter-post-card{
   position: relative;
   top: -5px;
-  filter: drop-shadow(#765dd0 0.1rem 0.1rem 5px);
+  filter: drop-shadow(#ca9eff 0.1rem 0.1rem 5px);
 }
 @media screen and (max-width: 600px){
   #viewPost div>h1{
