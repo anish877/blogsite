@@ -25,6 +25,7 @@ li{
     resize: none;
     color: white;
     border: 0px;
+    transition: transform 0.3s
   }
   #body {
     width: 75%;
@@ -38,6 +39,7 @@ li{
     font-size: 16px;
     resize: none;
     border: 0px;
+    transition: transform 0.3s
   }
   input {
     width: 10%;
@@ -53,6 +55,7 @@ li{
     background-color: #353839;
     color: white;
     border: 0px;
+    transition: transform 0.3s
   }
   li{
     display: flex;
@@ -60,8 +63,7 @@ li{
     align-items: center;
   }
   .mouse-enter{
-    position: relative;
-    top: -5px;
+    transform: scale(1.05);
     color: white;
     box-shadow: 0 5px 15px #765dd070;
   }
@@ -148,6 +150,7 @@ li{
     border-radius: 12px;
     border: 4px solid #765dd0;
     background-color: #1c1b21;
+    transition: transform 0.3s;
   }
   #post h1{
     font-family: "Source Code Pro", monospace;
@@ -346,8 +349,7 @@ span5,span6{
     text-align: left;
 }
 .mouse-enter-post-card{
-  position: relative;
-  top: -5px;
+  transform: scale(1.05);
   filter: drop-shadow(#ca9eff 0.1rem 0.1rem 5px);
 }
 .configButton{
