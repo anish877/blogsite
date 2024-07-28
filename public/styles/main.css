@@ -79,7 +79,7 @@ li{
         font-style: normal;
         font-size: 4rem;
         color: #765dd0;
-        filter: drop-shadow(#765dd0 0.1rem 0.1rem 1px);
+        /* filter: drop-shadow(#765dd0 0.1rem 0.1rem 1px); */
   }
   .headingOfNewPost{
   font-family: "Playwrite PE", cursive;
@@ -376,25 +376,47 @@ span5,span6{
 
 }
 @media screen and (max-width: 600px){
-  #viewPost div>h1{
-    font-size: 3rem;
+
+  #changPostButton, #newPostForm > li:nth-child(5){
+    transform: scale(0.8);
   }
-  #viewPost div>p{
-    font-size: 1rem;
+
+  #loginPostSubmitButton{
+    margin-top: 30px;
+    transform: scale(0.7);
   }
-  #post{
+
+  #newPostForm > li:nth-child(1) > h2{
+    margin-bottom: 40px;
+    margin-top: 30px;
+  }
+
+  #heading,#body{
     width: 80%;
   }
-  #post h1{
+
+  #viewPost div>h1{
     font-size: 2.5rem;
+    margin-top: 50px;
   }
+  #viewPost div>p{
+    font-size: 0.9rem;
+  }
+  #post{
+    width: 100%;
+    transform: scale(0.8);
+  }
+  /* #post h1{
+    font-size: 2rem;
+  } */
   #postEditor li>h1{
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
-    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
   #loginPost h1{
-    font-size: 2rem;
+    font-size: 1.3rem;
     margin-bottom: 50px;
   }
   #loginPost{
